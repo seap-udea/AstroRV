@@ -1,6 +1,9 @@
-#########################################################
-# GIT RELATED
-#########################################################
+pack:
+	@-bash .store/pack.sh pack
+
+unpack:
+	@-bash .store/pack.sh unpack
+
 commit:
 	@echo "Commiting..."
 	@-git commit -am "Commit"
